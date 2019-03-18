@@ -6,6 +6,7 @@ An Arduino based controller for electric vehicles.
 
 - Smooth acceleration
 - Thumb throttle based speed control
+- Eco, Normal and Performance driving modes :checkered_flag:
 
 ## :bicyclist: Purpose
 
