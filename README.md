@@ -4,12 +4,12 @@ An Arduino based controller for electric vehicles.
 
 ## :star: Features
 
-- Smooth acceleration and deceleration
-- Simple potentiometer speed control
+- Smooth acceleration
+- Thumb throttle based speed control
 
-## :car: Purpose
+## :bicyclist: Purpose
 
-I created this controller for my electric Go-Kart hobby project. The idea is to later extend this with a serial connected Raspberry Pi which is going to be used as a display to show information like the speed or the temperature.
+I created this controller for my electric beach cruiser bike project.
 
 ## :thumbsup: Credits
 
