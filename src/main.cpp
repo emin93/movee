@@ -9,7 +9,7 @@ int throttle = 0;
 int speed = 1505;
 int realSpeed = 1505;
 int maxSpeed = 2000;
-mode currentMode = eco;
+mode currentMode = performance;
 
 void setup() {
   motor.attach(3);
@@ -30,17 +30,18 @@ void loop() {
   }
 
   throttle = analogRead(throttlePin);
-  speed = map(throttle, 1023, 0, 1505, maxSpeed);
+  speed = map(throttle, 180, 853, 1501, maxSpeed);
 
   if (realSpeed < speed) {
     realSpeed++;
-    delay(20);
   }
 
   if (realSpeed > speed) {
     realSpeed--;
   }
 
-  realSpeed = constrain(realSpeed, 1505, 2000);
+  delay(3);
+
+  realSpeed = constrain(realSpeed, 1501, 2000);
   motor.writeMicroseconds(realSpeed);
 }
